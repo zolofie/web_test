@@ -1,0 +1,174 @@
+/*Importation de style via Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+
+@font-face {
+    font-family: Devil Candle;
+    src: url(../polices/DevilCandle_PERSONAL_USE_ONLY.otf); /*EN INSTALLANT UNE POLICE VIA DAFONT TU PLACE CES DOWNLOAD DANS UN DOSSIER polices*/
+    
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	margin-top: 50px;
+    color: #000000;
+    background-color: darkgray;
+    font-size: 14px;
+}
+
+#global, footer div{
+    width: 80vw; /*largeur*/
+    min-width: 600px;
+    max-width: 1000px;
+    /*height: 600px;  hauteur*/ 
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+header, footer {
+    height: 20vh;   
+    background-color: aqua;
+
+}
+
+
+#global div{
+
+
+
+
+
+
+
+}
+aside, section{
+    display:inline-block;
+    vertical-align: top;
+    /*height: 450px; on enleve tous ce qui height vue que nous avons mis un VH*/
+    padding: 2% 5%;
+
+}
+
+aside{
+    width: 25%;
+    background-color: blueviolet;
+    height: 60vh;
+    /*vertical-align: ;*/
+
+}
+
+section{
+    width: 50%;
+    background-color: chartreuse;
+    height: 60vh;
+    border-radius: 20px;
+
+}
+
+h1 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;  
+	background-color: pink;
+}
+
+nav {
+    height: 30px;  
+	background-color:black;
+}
+
+
+nav ol{
+    color:aliceblue;
+    padding: 3%;
+
+}
+
+nav ol li{
+    display: inline-block;
+    width: 10%;
+    
+    
+}
+
+
+nav ol li:hover{
+    background-color:yellow;
+}
+
+ol, ul{
+    list-style-position: inside;
+    
+    /* list-style-type: none; Pour enlever la numéraotation 1, 2, 3 et poin vue que ol = #numero ul = point*/
+}
+
+
+aside ol{
+    list-style-type: upper-roman;
+}
+
+aside ul{
+    list-style-type:circle;
+}
+
+ul li ul{
+    list-style: square;
+    margin-left: 2em;
+}
+
+h2 + ol, h2 + ul{
+    margin-top: 1em;
+}
+
+
+aside ol li:first-child{
+    background-color: white; /*Vise seulelemt le premier element de la li (bleu)*/
+}
+
+aside ul li:last-child{
+    background-color: orange; /*Tu vas voir que il y a deux elemet qui correspond à ce asidecul li last-child*/
+}
+
+
+nav ol li:nth-child(odd){
+    color: blue;
+}
+
+nav ol li:nth-child(even){
+    color:pink
+}
+
+
+figure{
+    margin:0 auto;
+    width: 25;
+}
+
+figure img{
+    width: 25;
+}
+
+figure figcaption{
+    background-color: black;
+    color:white;
+    font-weight:bold;
+    margin-top: -5px; /*enlève de l'espace su texte en dessous de l'image*/
+}
+
+input{
+    background-color: black;
+    color:white;
+    border: 2px white;
+    border-radius: 20px;
+}
